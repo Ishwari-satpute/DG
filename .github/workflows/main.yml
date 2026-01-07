@@ -1,0 +1,14 @@
+
+name: simple CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+
+      - name: Run Test
+        run: echo "code checked successfully"
